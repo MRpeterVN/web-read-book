@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <title>Sách Hay</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="style.js"></script>
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" type="image/png" href="data:image/jpeg;base64,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">
+    
+</head>
+
+<body>
+
+    <div class="wrapper1">
+        <div class="timkiem">
+
+            <input type="text" name="Search" id="Search" placeholder="  Tìm Kiếm... ">
+            <button class="btnSearch">Tìm Kiếm</button>
+
+        </div>
+
+        <nav class="menu">
+            <ul class="clearfix">
+                <li><a class="abc" href="home1.html"><i " class="material-icons okok" >home</i> Trang chủ</a>
+                </li>
+                <li>
+                    <a class="theloai" href="#">Thể Loại <span class="arrow">&#9660;</span></a>
+
+                    <ul class="sub-menu">
+
+                        <li><a href="theloai1.html">Kinh Tế - Quản Lý</a>
+                        </li>
+                        <li><a href="theloai2.html">Tâm Lý - Kỹ Năng Sống</a>
+                        </li>
+                        <li><a href="theloai3.html">Triết Học</a>
+                        </li>
+                        <li><a href="theloai4.html">Đời sống - Xã hội</a>
+                        </li>
+                        <li><a href="theloai5.html">Lịch Sử - Chính Trị </a>
+                        </li>
+                        <li><a href="theloai6.html">Khoa Học - Kỹ Thuật</a>
+                        </li>
+                        <li><a href="theloai7.html">Công Nghệ Thông Tin</a>
+                        </li>
+                        <li><a href="theloai8.html">Văn Học Việt Nam</a>
+                        </li>
+                        <li><a href="theloai9.html">Khác</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li><a href="Sachmoi.html">Sách mới nhất</a>
+                </li>
+                <li><a href="Khuyendoc.html">Khuyên đọc</a>
+                </li>
+                <li><a href="signin\index.html">Đăng Nhập</a>
+                </li>
+
+
+
+        </nav>
+
+        <div class="menu-con">
+            <button id="myBtn"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-square" viewBox="0 0 16 16">
+                <path d="M3.626 6.832A.5.5 0 0 1 4 6h8a.5.5 0 0 1 .374.832l-4 4.5a.5.5 0 0 1-.748 0l-4-4.5z"/>
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2z"/>
+              </svg></i>
+            </button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class='my-menu'>
+                        <ul>
+                            <li><a class="abc" href="home1.html"><i " class="material-icons okok" >home</i> Trang chủ</a>
+                            </li>
+                            <li>
+                                <a class="theloai" href="#">Thể Loại <span class="arrow">&#9660;</span></a>
+            
+                                <ul class="sub-menu">
+            
+                                    <li><a href="theloai1.html">Kinh Tế - Quản Lý</a>
+                                    </li>
+                                    <li><a href="theloai2.html">Tâm Lý - Kỹ Năng Sống</a>
+                                    </li>
+                                    <li><a href="theloai3.html">Triết Học</a>
+                                    </li>
+                                    <li><a href="theloai4.html">Đời sống - Xã hội</a>
+                                    </li>
+                                    <li><a href="theloai5.html">Lịch Sử - Chính Trị </a>
+                                    </li>
+                                    <li><a href="theloai6.html">Khoa Học - Kỹ Thuật</a>
+                                    </li>
+                                    <li><a href="theloai7.html">Công Nghệ Thông Tin</a>
+                                    </li>
+                                    <li><a href="theloai8.html">Văn Học Việt Nam</a>
+                                    </li>
+                                    <li><a href="theloai9.html">Khác</a>
+                                    </li>
+            
+            
+                                </ul>
+                            </li>
+                            <li><a href="Sachmoi.html">Sách mới nhất</a>
+                            </li>
+                            <li><a href="Khuyendoc.html">Khuyên đọc</a>
+                            </li>
+                            <li><a href="signin\index.html">Đăng Nhập</a>
+                            </li>
+            
+            
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="header">
+
+
+        <div class="content_above">
+            <div class="starwars-demo">
+                <img src="demo2.png" alt="Star" class="star">
+                <h2 class="byline" id="byline">Website Đọc Sách Miễn Phí !</h2>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- slider -->
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Audio/Avatar/201407190913100003480_co_lai_do_web.jpg" alt="">
+                </a>
+            </div>
+
+
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Audio/Avatar/201512311141100003858_chuyen_pha_cuoi_cung_640x360_web.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Audio/Avatar/201407311513480003531_ngoai_toi_web.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Book/Avatar/201407112331260003390_ma_phat_quan_cong_web.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Book/Avatar/201407191522230003195_di_thi_giau_web.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Image/Avatar/201604190901510001140_nhungcauchuyenkhamphathegioitunhien_p3_web.jpg" alt="">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Audio/Avatar/201706061623100001722_hoa_dai_web.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Book/Avatar/201412101702030003453_trinh_nu_ma_no_canh_web.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Image/Avatar/201407062301400003388_coc_kien_troi_web.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Image/Avatar/201604191516470001760_28_cach1_web.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Audio/Avatar/201408261536010003462_bup_sen_xanh_bia_web.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="docsach.html"><img src="https://url.sachtot.vn/res/Audio/Avatar/201506241655470003355_ngoi_khoc_tren_cay_1371723695_500x0_web.jpg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="head1">
+
+        <div class="tieude">
+
+            <div class="waviy">
+                <span style="--i:1">S</span>
+                <span style="--i:2">Á</span>
+                <span style="--i:3">C</span>
+                <span style="--i:4">H</span>
+                <span style="--i:5"> </span>
+                <span style="--i:6">M</span>
+                <span style="--i:7">Ớ</span>
+                <span style="--i:8">I</span>
+                <span style="--i:9"> </span>
+                <span style="--i:10">N</span>
+                <span style="--i:11">H</span>
+                <span style="--i:12">Ấ</span>
+                <span style="--i:13">T</span>
+
+            </div>
+
+
+
+            <!-- <h1 style="font-family: 'Courier New', Courier, monospace; font-weight: 1000;">
+         Sách Mới Nhất 
+        </h1> -->
+        </div>
+        <br>
+        <div class="row1">
+            <div class="column">
+                <a href="docsach.html"><img src="https://nhasachmienphi.com/wp-content/uploads/Th%C3%A0nh-C%C3%A1t-T%C6%B0-H%C3%A3n-V%C3%A0-S%E1%BB%B1-H%C3%ACnh-Th%C3%A0nh-Th%E1%BA%BF-Gi%E1%BB%9Bi-Hi%E1%BB%87n-%C4%90%E1%BA%A1i.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3 style="font-size:1,1vw ;">Thành Cát Tư Hãn Và Sự Hình Thành Thế Giới Hiện Đại</h3>
+                    <span>Tác giả: Jack Weatherford
+                    Thể loại: Hồi Ký - Tuỳ Bút</span>
+                </div>
+            </div>
+            <div class="column">
+                <a href="docsach.html"><img src="https://nhasachmienphi.com/images/thumbnail/nhasachmienphi-vo-nguyen-giap-chien-thang-bang-moi-gia.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Võ Nguyên Giáp–Chiến Thắng Bằng Mọi Giá</h3>
+                    <span>Tác giả: Cecil B. Currey
+                Thể loại: Hồi Ký - Tuỳ Bút</span>
+                </div>
+            </div>
+            <div class="column">
+                <a href="docsach.html"><img src="https://nhasachmienphi.com/images/thumbnail/nhasachmienphi-putin-su-troi-day-cua-mot-con-nguoi.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Putin–Sự Trỗi Dậy Của Một Con Người
+                    </h3>
+                    <br>
+                    <span>Tác giả: Trương Dự <br>
+                    Thể loại: Hồi Ký - Tuỳ Bút</span>
+                </div>
+            </div>
+            <div class="column">
+                <a href="docsach.html"><img class="cu" src="https://nhasachmienphi.com/images/thumbnail/nhasachmienphi-hanh-trinh-cua-linh-hon.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Hành Trình Của Linh Hồn</h3>
+                    <br>
+                    <span>Tác giả: Michael Duff Newton
+Thể loại: Văn Hóa - Tôn Giáo</span>
+                </div>
+            </div>
+            <div class="column">
+                <a href="docsach.html"><img class="cu" src="https://nhasachmienphi.com/images/thumbnail/nhasachmienphi-vo-nga-vo-uu.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Vô Ngã Vô Ưu</h3>
+                    <br>
+                    <br> <span>Tác giả: Ni sư Ayya Khema
+                Thể loại: Văn Hóa - Tôn Giáo</span>
+                </div>
+            </div>
+            <div class="column">
+                <a href="docsach.html"><img class="cu" src="https://nhasachmienphi.com/wp-content/uploads/Ung-Th%C6%B0-S%E1%BB%B1-Th%E1%BA%ADt-H%C6%B0-C%E1%BA%A5u-v%C3%A0-Gian-L%E1%BA%ADn.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Ung Thư – Sự Thật, Hư Cấu và Gian Lận</h3>
+                    <br>
+                    <span>Tác giả: Ty Bollinger
+                Thể loại: Y Học - Sức Khỏe</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="head2">
+
+        <div class="tieude">
+
+            <div class="waviy">
+                <span style="--i:1">K</span>
+                <span style="--i:2">H</span>
+                <span style="--i:3">U</span>
+                <span style="--i:4">Y</span>
+                <span style="--i:5">Ê</span>
+                <span style="--i:6">N</span>
+                <span style="--i:7"> </span>
+                <span style="--i:8">Đ</span>
+                <span style="--i:9">Ọ</span>
+                <span style="--i:10">C</span>
+
+            </div>
+
+
+
+
+
+        </div>
+        <br>
+
+        <div class="row1">
+            <div class="column">
+                <a href="docsach.html"><img src="https://nhasachmienphi.com/images/thumbnail/nhasachmienphi-tuoi-tho-du-doi.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Tuổi Thơ Dữ Dội</h3>
+                    <br>
+                    <span>Tác giả:Phùng Quán <br>
+                Thể loại:Văn Học Việt Nam</span>
+                </div>
+            </div>
+
+            <div class="column">
+                <a href="docsach.html"><img src="https://nhasachmienphi.com/images/thumbnail/nhasachmienphi-chi-em-khac-me.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Chị Em Khác Mẹ</h3>
+                    <br>
+                    <span>Tác giả:Thụy Ý <br>
+                    Thể loại:Văn Học Việt Nam</span>
+                </div>
+            </div>
+            <div class="column">
+                <a href="docsach.html"><img class="cu" src="https://nhasachmienphi.com/images/thumbnail/nhasachmienphi-dong-rac-cu-tron-bo.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Đống Rác Cũ</h3>
+                    <br>
+                    <span>Tác giả:Nguyễn Công Hoan 
+                Thể loại:Văn Học Việt Nam
+             </span>
+                </div>
+            </div>
+            <div class="column">
+                <a href="docsach.html"><img class="cu" src="https://nhasachmienphi.com/images/thumbnail/nhasachmienphi-tho-ngu-ngon-la-fontaine.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Thơ Ngụ Ngôn La Fontaine</h3>
+                    <span>Tác giả: Jean de la Fontaine
+                    Thể loại: Truyện Cười - Tiếu Lâm</span>
+                </div>
+            </div>
+            <div class="column">
+                <a href="docsach.html"><img src="https://nhasachmienphi.com/images/thumbnail/nhasachmienphi-ba-chang-ngoc.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Ba Chàng Ngốc</h3>
+                    <br>
+                    <span>Tác giả: Chetan Bhagat <br>
+                Thể loại: Truyện Cười - Tiếu Lâm</span>
+                </div>
+            </div>
+            <div class="column">
+                <a href="docsach.html"><img class="cu" src="https://nhasachmienphi.com/wp-content/uploads/Ung-Th%C6%B0-S%E1%BB%B1-Th%E1%BA%ADt-H%C6%B0-C%E1%BA%A5u-v%C3%A0-Gian-L%E1%BA%ADn.jpg" alt="">
+                </a>
+                <div class="tensach">
+                    <h3>Ung Thư – Sự Thật, Hư Cấu và Gian Lận</h3>
+                    <span>Tác giả: Ty Bollinger <br>
+                Thể loại: Y Học - Sức Khỏe</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about1">
+                <h2>Về Chúng Tôi</h2>
+                <p>Truyền Thông</p>
+                <br>
+                <br>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+                <div class="icon">
+
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/sachhay.page">
+                                <i class="fab fa-facebook-f icon"></i> </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/c/MixiGamingofficial"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"><i ><svg xmlns="http://www.w3.org/2000/svg" width="18" height=""  viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></i></a>
+                        </li>
+                        <li>
+                            <a href="home1.html"><i class="fab fa-google-plus-g icon"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+
+            </div>
+
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+            <div class="noi-dung links">
+                <h2>Đường Dẫn</h2>
+                <ul>
+                    <li><a href="home1.html">Trang Chủ</a>
+                    </li>
+                    <li><a href="https://www.google.com/maps/@9.779349,105.6189045,11z?hl=vi-VN">Bản Đồ</a>
+                    </li>
+                    <li><a href="#">Chính sách bảo mật</a>
+                    </li>
+                    <li>
+                        <p style="color: white;">sachhay.vn
+                            <br> Copyright © 2022 sachhay</p>
+
+                    </li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i>  Quận Ngũ Hành Sơn, Tp Đà Nẵng
+                        </li></span>
+
+
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <p><a href="tel:1234567">0337225436</a>
+                                <br />
+                                <a href="callto:1234567">0246679289</a>
+                            </p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <p><a href="#">truonganle@gmail.com</a>
+                            </p>
+                        </li>
+
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+        </div>
+    </footer>
+
+
+    <!-- back to top -->
+    <div>
+
+
+        <!-- on top -->
+        <button onclick="topFunction()" id="on_top" title="Go to top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+            </svg>
+        </button>
+    </div>
+    <p style="text-align:justify;">&nbsp;</p>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery(".dropdown").click(function() {
+                jQuery(this).find(".sub-menu1").slideToggle("500");
+            });
+        });
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modals
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
